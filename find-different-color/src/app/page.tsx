@@ -86,7 +86,6 @@ export default function Home() {
           difficultyFactor={getDifficultyFactor(level)}
           onCorrectClick={handleCorrectClick}
           onWrongClick={handleGameOver}
-          gameOver={gameOver}
         />
       </div>
 
@@ -156,7 +155,6 @@ export default function Home() {
       <Achievements
         isOpen={showAchievements}
         onClose={() => setShowAchievements(false)}
-        achievementsList={achievements}
         unlockedAchievements={unlockedAchievements}
       />
     </main>
